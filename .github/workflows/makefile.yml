@@ -16,3 +16,10 @@ jobs:
       
     - name: Install dependencies
       run: make
+      
+    - name: Commit index
+      run: |
+        git config --global user.name 'M1TE5H'
+        git config --global user.email 'M1TE5H@users.noreply.github.com'
+        git commit -am "index.html"
+        git push
