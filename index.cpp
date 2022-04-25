@@ -2,7 +2,7 @@
 #include <fstream>
 
 void generate () {
-  std::ostream indexfile;
+  std::ofstream indexfile;
   indexfile.open("index.html");
   indexfile << "<!DOCTYPE html>\n";
   indexfile << "<html>\n";
