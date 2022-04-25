@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 
-int main() {
+void generate () {
   std::ostream indexfile;
   indexfile.open("index.html");
   indexfile << "<!DOCTYPE html>\n";
@@ -14,5 +14,9 @@ int main() {
   indexfile << "\t</body>\n";
   indexfile << "</html>\n";
   indexfile.close();
+}
+
+int main () {
+  generate();
   return 0;
 }
