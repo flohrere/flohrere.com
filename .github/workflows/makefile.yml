@@ -19,3 +19,7 @@ jobs:
       
     - name: Install dependencies
       run: make
+      
+    - uses: actions/download-artifact@v3
+      with:
+        name: index.html
