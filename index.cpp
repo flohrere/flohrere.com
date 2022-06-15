@@ -3,7 +3,7 @@
 
 namespace flohrere {
 
-const char* title = "culture and cuisine | flohrere - berlin blogger";
+const char* title = "culture and cuisine | flohrere blog - berlin foodie";
   
 void generate (const char* title) {
   std::ofstream indexfile;
