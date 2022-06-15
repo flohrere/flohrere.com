@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 
+namespace flohrere {
 void generate () {
   std::ofstream indexfile;
   indexfile.open("index.html");
@@ -15,8 +16,9 @@ void generate () {
   indexfile << "</html>\n";
   indexfile.close();
 }
-
+} // namespace flohrere
+  
 int main () {
-  generate();
+  flohrere::generate();
   return 0;
 }
